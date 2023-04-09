@@ -7,7 +7,7 @@
    -- 1. npm start
 
 ** Uso
-   -- Administra imagenes al stylo de pinterest
+   -- Administra imagenes al estilo de pinterest
       .Podemos realizar alta y baja de imagenes.
 
 ** Tecnologias utilizadas
