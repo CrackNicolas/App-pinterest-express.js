@@ -1,0 +1,139 @@
+:root{
+    --color-text-primary : #3d5fe7;
+    --color-font-primary : #000000;
+    --color-font-secondary : #ff0000;
+    --color-font-tertiary: #01fe01;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    background: var(--color-font-primary);
+}
+body::-webkit-scrollbar{
+    width: 9px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color-text-primary);
+    border-radius: 30px;
+}
+.nav{
+    position: fixed;
+    z-index: 30;
+    background-color: var(--color-font-primary);
+    border-bottom: 0.1px solid var(--color-text-primary);
+}
+.nav ion-icon{
+    width: 22px;
+    height: 22px;
+}
+.nav a{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.card{
+    border: 1px solid var(--color-text-primary);
+    background-color: var(--color-font-primary);
+    color: var(--color-text-primary);
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+}
+.card h5{
+    font-weight: bold;
+}
+.card img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.card a, .card .btn-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+.card .btn-delete{
+    background-color: var(--color-font-secondary);
+    color: var(--color-font-primary);
+}
+.card .btn-delete span{
+    padding-top: 1px;
+}
+.card .btn-add{
+    font-size: 16px;
+    border: 1px solid var(--color-font-tertiary);
+    background-color: var(--color-font-tertiary);
+    color: var(--color-font-primary);
+}
+.card .btn-view{
+    background-color: var(--color-font-primary);
+    color: var(--color-text-primary);
+}
+.card .btn-view:hover{
+    background-color: var(--color-text-primary);
+    color: var(--color-font-primary);
+}
+.card a:hover, .card .btn-add:hover{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.card .btn-add{
+    margin-bottom: -18px;
+}
+.card .btn-view ion-icon, .card .btn-add ion-icon{
+    width: 23px;
+    height: 23px;
+}
+.card .btn-delete ion-icon{
+    width: 20px;
+    height: 20px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 25px 0.1px var(--color-text-primary);
+}
+textarea::-webkit-scrollbar{
+    width: 7px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: var(--color-text-primary);
+    border-radius: 30px;
+}
+input, textarea{
+    background: var(--color-font-primary);
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid var(--color-text-primary);
+    color: var(--color-text-primary);
+    outline: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 150px;
+}
+.header{
+    display: block;
+    border: 1px solid var(--color-text-primary);
+    border-radius: 4px;
+    height: 100px;
+    text-align: center;
+    margin-top: -40px;
+}
+.header:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0.1px var(--color-text-primary);
+}
+.header ion-icon{
+    width: 70px;
+    height: 70px;
+}
+.header p{
+    margin-top: -10px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}

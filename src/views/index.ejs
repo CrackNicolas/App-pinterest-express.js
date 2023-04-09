@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head.ejs") %>
+</head>
+<body>
+    <%- include("partials/navigation.ejs") %>
+    <div class="card-columns p-4 mt-5">
+        <% images.forEach(function(image) { %>
+            <div class="card">
+                <img src="<%= image.path %>" class="card-img-top" alt="<%= image.description %>">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= image.title %>
+                    </h5>
+                    <p class="card-text">
+                        <%= image.description %>
+                    </p>
+                    <p class="card-text">
+                        <%= format(image.created_at) %>
+                    </p>
+                    <a href="/image/<%= image._id %>" class="btn btn-primary btn-view w-100">
+                        <ion-icon name="eye-outline"></ion-icon>
+                        <span>View profile</span>
+                    </a>
+                </div>
+            </div>
+         <% }) %>
+    </div>
+</body>
+</html>
